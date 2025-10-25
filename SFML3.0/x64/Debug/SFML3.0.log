@@ -1,0 +1,45 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SFML3.0.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Main.cpp
+  Player.cpp
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(38,87): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(38,87): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(38,87): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(38,87): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(38,87): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(40,37): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(40,37): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(40,37): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(40,37): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(40,37): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(43,86): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(43,86): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(43,86): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(43,86): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(43,86): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(45,36): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(45,36): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(45,36): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(45,36): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(45,36): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(48,83): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(48,83): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(48,83): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(48,83): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(48,83): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(50,33): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(50,33): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(50,33): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(50,33): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(50,33): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(53,84): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(53,84): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(53,84): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(53,84): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(53,84): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(55,34): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(55,34): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(55,34): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(55,34): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(55,34): warning C4244:         ]
+  Generating Code...
+  SFML3.0.vcxproj -> C:\Users\Ebisu\source\repos\Raycaster\x64\Debug\Raycaster.exe
