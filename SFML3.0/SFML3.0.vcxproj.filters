@@ -27,7 +27,7 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ray.cpp">
+    <ClCompile Include="rayCaster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -58,7 +58,7 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Ray.h">
+    <ClInclude Include="rayCaster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

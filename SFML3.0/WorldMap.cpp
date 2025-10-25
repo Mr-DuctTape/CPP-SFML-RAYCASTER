@@ -2,7 +2,7 @@
 
 std::vector<sf::RectangleShape> World::mapObjects;
 
-void WorldMap::draw(sf::RenderWindow& window) 
+void World::WorldMap::draw(sf::RenderWindow& window) 
 {
 	if (World::mapObjects.empty()) 
 	{

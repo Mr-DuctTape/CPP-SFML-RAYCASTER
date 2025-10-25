@@ -1,11 +1,11 @@
 #pragma once
 #include "Player.h"
 
-class Ray
-{
+class Ray{
 private:
 	Vector2f playerLocation;
-	double angle = 0.0;
+	double angle{};
+	RectangleShape line();
 public:
 	void DrawRay(RenderWindow  &window);
 	Ray(Player &player, double radians) 
