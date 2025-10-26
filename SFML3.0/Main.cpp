@@ -16,7 +16,7 @@ int main()
 
     WorldMap worldMap;
 
-    window.setFramerateLimit(60);
+    //window.setFramerateLimit(60);
 
     Player player;
 
@@ -34,7 +34,7 @@ int main()
                 window.close();
         }
 
-        player.move(player.shape);
+        player.move(player.shape, 2.0);
 
         window.clear();
 
@@ -45,11 +45,20 @@ int main()
             window.draw(player.shape);
        
             window.draw(player.lineOfSight);
+
+            raycaster.castRays(player, worldMap);
+
+            raycaster.DrawWalls(window);
         }
         else
         {
 
+            window.draw(player.shape);
+
+            worldMap.draw(window);
+
             raycaster.castRays(player, worldMap);
+
             raycaster.DrawWalls(window);
         }
 

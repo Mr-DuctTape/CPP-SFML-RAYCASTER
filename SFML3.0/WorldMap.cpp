@@ -16,17 +16,14 @@ void World::WorldMap::draw(sf::RenderWindow& window)
 					sf::RectangleShape cell;
 					cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
 					cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
-					cell.setOutlineColor(sf::Color::White);
-					cell.setOutlineThickness(1.f);
+					cell.setFillColor(sf::Color::Transparent);
 					World::mapObjects.push_back(cell);
 				}
 				else if (mapSize[y][x] == 0) 
 				{
 					sf::RectangleShape cell;
 					cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
-					cell.setFillColor(sf::Color::Black);
-					cell.setOutlineColor(sf::Color::White);
-					cell.setOutlineThickness(1.f);
+					cell.setFillColor(sf::Color::Transparent);
 					cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
 					Outlines.push_back(cell);
 				}

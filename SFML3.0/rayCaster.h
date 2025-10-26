@@ -1,6 +1,14 @@
 #pragma once
 #include "Player.h"
 
+enum RayQuality
+{
+	Amazing, // full resolution (ResX)
+	Good, // half resolution (ResX / 2)
+	Fast, // third resolution (ResX / 3)
+	VeryFast // Quarter resolution (ResX / 4)
+};
+
 class rayCaster
 {
 private:

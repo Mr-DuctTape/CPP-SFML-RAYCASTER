@@ -30,13 +30,14 @@ Vector2f Player::direction_with_rotation(Vector2f direction)
 
 	Vector2f rotDir;
 
+	//Rotation calculation
 	rotDir.x = direction.x * cos(rad) - direction.y * sin(rad);
 	rotDir.y = direction.x * sin(rad) + direction.y * cos(rad);
 
 	return rotDir;
 }
 
-void Player::move(CircleShape& playerShape)
+void Player::move(CircleShape& playerShape, double deltaTime)
 {
 	//Rotation
 
@@ -52,14 +53,14 @@ void Player::move(CircleShape& playerShape)
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Right))
 	{
-		rotationAngle += 5.f;
-		std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
+		rotationAngle += 1.f * deltaTime;
+		//std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Left))
 	{
-		rotationAngle -= 5.f;
-		std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
+		rotationAngle -= 1.f * deltaTime;
+		//std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
 	}
 
 	lookingDirection = direction_with_rotation({Vector2f(0.f, -1.f)});

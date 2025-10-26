@@ -6,8 +6,8 @@
 #define COLUMNS 10
 #define ROWS 20
 
-constexpr int resX = 640;
-constexpr int resY = 320;
+constexpr int resX = 320;
+constexpr int resY = 200;
 
 namespace World
 {
