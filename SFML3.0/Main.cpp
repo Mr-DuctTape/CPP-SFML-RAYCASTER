@@ -12,11 +12,11 @@ using namespace World;
 int main()
 {
     // Create the main window
-    RenderWindow window(VideoMode({resX,resY,}), "Raycaster");
+    RenderWindow window(VideoMode({resX,resY,}), "Raycaster", sf::Style::Default);
 
     WorldMap worldMap;
 
-    //window.setFramerateLimit(60);
+    window.setFramerateLimit(60);
 
     Player player;
 
