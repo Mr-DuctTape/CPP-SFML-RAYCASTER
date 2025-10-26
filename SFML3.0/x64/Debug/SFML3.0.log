@@ -1,15 +1,43 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SFML3.0.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Player.cpp
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(33,36): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(33,36): warning C4244:         with
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(33,36): warning C4244:         [
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(33,36): warning C4244:             T=float
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(33,36): warning C4244:         ]
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(34,36): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(34,36): warning C4244:         with
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(34,36): warning C4244:         [
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(34,36): warning C4244:             T=float
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(34,36): warning C4244:         ]
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(57,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(65,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  rayCaster.cpp
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,88): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,88): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,88): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,88): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,88): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,41): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,41): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,41): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,41): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(31,41): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(78,13): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(79,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(85,13): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(86,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(104,32): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(104,32): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(104,32): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(104,32): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(104,32): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(105,32): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(105,32): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(105,32): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(105,32): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(105,32): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(108,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,83): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,83): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,83): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,83): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,83): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,46): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,46): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,46): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,46): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(112,46): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,30): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,30): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,30): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,30): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,30): warning C4244:         ]
   SFML3.0.vcxproj -> C:\Users\Ebisu\source\repos\Raycaster\x64\Debug\Raycaster.exe

@@ -13,7 +13,7 @@ namespace World
 {
     extern std::vector<sf::RectangleShape> mapObjects;
 
-    static const uint8_t mapSize[COLUMNS][ROWS]
+    static const int mapSize[COLUMNS][ROWS]
     {
         {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
         {1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1},

@@ -26,7 +26,7 @@ bool Player::CollisionDetection(Vector2f direction)
 
 Vector2f Player::direction_with_rotation(Vector2f direction)
 {
-	double rad = radianConversion(angle);
+	double rad = radianConversion(rotationAngle);
 
 	Vector2f rotDir;
 
@@ -40,31 +40,43 @@ void Player::move(CircleShape& playerShape)
 {
 	//Rotation
 
-	if (angle > 360)
+	if (rotationAngle > 360)
 	{
-		angle = 0;
+		rotationAngle = 0;
 	}
 
-	if (angle < 0)
+	if (rotationAngle < 0)
 	{
-		angle = 360;
+		rotationAngle = 360;
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Right))
 	{
-		angle -= 5.f;
-		double rad = radianConversion(angle);
-		Angle a = radians(rad);
-		playerShape.rotate(a);
+		rotationAngle += 5.f;
+		std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Left))
 	{
-		angle += 5.f;
-		double rad = radianConversion(angle);
-		Angle a = radians(rad);
-		playerShape.rotate(a);
+		rotationAngle -= 5.f;
+		std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
 	}
+
+	lookingDirection = direction_with_rotation({Vector2f(0.f, -1.f)});
+
+	Vector2f origin = playerShape.getPosition();
+	Vector2f target = origin + lookingDirection;
+
+	double dx = target.x - origin.x;
+	double dy = target.y - origin.y;
+
+	double rad = atan2(dy, dx);
+
+	Angle a = radians(rad - PI / 2.0);
+
+	// Rotate line of sight
+	lineOfSight.setPosition(origin);
+	lineOfSight.setRotation(a);
 
 
 	//Movement

@@ -10,8 +10,6 @@ class Player
 {
 private:
 	bool CollisionDetection(Vector2f direction);
-	double movementSpeed = 1.0;
-	float rotationAmount = 0.1f;
     struct Directions
 	{
 		Vector2f up{ 0,-1.f };
@@ -21,11 +19,15 @@ private:
 	};
 
 public:
-	double angle = 0.0;
+	double rotationAngle = 0.0;
 	Directions directions;
 	CircleShape shape;
+	RectangleShape lineOfSight;
+	Vector2f lookingDirection;
 	Player()
 	{
+		lineOfSight.setSize(Vector2f(2.f, 10.f));
+		lineOfSight.setOrigin(Vector2f(-1, -1));
 		shape.setRadius(10.f);
 		shape.setPointCount(3);
 		shape.setOrigin(Vector2f(shape.getRadius(), shape.getRadius()));
