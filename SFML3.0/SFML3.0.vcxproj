@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MapLoader.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="rayCaster.cpp" />
     <ClCompile Include="WorldMap.cpp" />
@@ -146,9 +147,16 @@
     <None Include="..\x64\Release\sfml-window-3.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DebugMode.h" />
+    <ClInclude Include="MapLoader.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="rayCaster.h" />
     <ClInclude Include="WorldMap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Map1.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,9 +2,9 @@
 #include <iostream>
 #include "WorldMap.h"
 #include "Player.h"
+#include "DebugMode.h"
 #include "rayCaster.h"
 
-#define DEBUG 1
 
 using namespace sf;
 using namespace World;
@@ -14,14 +14,24 @@ int main()
     // Create the main window
     RenderWindow window(VideoMode({resX,resY,}), "Raycaster", sf::Style::Default);
 
+    MapLoader mapLoader;
+
+    mapLoader.LoadMap(1);
+
+
+    //window.setVerticalSyncEnabled(true);
+    window.setFramerateLimit(60);
+
     WorldMap worldMap;
 
-    window.setFramerateLimit(60);
+    worldMap.setCellSize();
 
     Player player;
 
     rayCaster raycaster;
-
+    int qualityNumber{};
+    std::cout << "Type a number for the resolution of the screen: ";
+    std::cin >> qualityNumber;
 
     // Start the game loop
     while (window.isOpen())
@@ -43,25 +53,17 @@ int main()
             worldMap.draw(window);
 
             window.draw(player.shape);
-       
-            window.draw(player.lineOfSight);
 
-            raycaster.castRays(player, worldMap);
+            raycaster.castRays(player, worldMap, qualityNumber);
 
             raycaster.DrawWalls(window);
         }
         else
         {
-
             window.draw(player.shape);
-
+            window.draw(player.lineOfSight);
             worldMap.draw(window);
-
-            raycaster.castRays(player, worldMap);
-
-            raycaster.DrawWalls(window);
         }
-
         window.display();
     }
 

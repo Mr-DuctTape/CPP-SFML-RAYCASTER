@@ -1,6 +1,8 @@
 #include "Player.h"
 #include "WorldMap.h"
 
+
+
 double radianConversion(double angle)
 {
 	return angle * (PI / 180.0);
@@ -53,13 +55,13 @@ void Player::move(CircleShape& playerShape, double deltaTime)
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Right))
 	{
-		rotationAngle += 1.f * deltaTime;
+		rotationAngle += 1.0;
 		//std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Left))
 	{
-		rotationAngle -= 1.f * deltaTime;
+		rotationAngle -= 1.0;
 		//std::cout << lookingDirection.x << " " << lookingDirection.y << "\n";
 	}
 

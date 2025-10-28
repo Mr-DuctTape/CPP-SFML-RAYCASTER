@@ -1,46 +1,133 @@
 #include "WorldMap.h"
 
-std::vector<sf::RectangleShape> World::mapObjects;
 
-void World::WorldMap::draw(sf::RenderWindow& window) 
+
+namespace World
 {
-	if (World::mapObjects.empty()) 
+	std::vector<sf::RectangleShape> mapObjects;
+	std::vector<std::vector<int>>mapSize;
+
+	int MapLoader::X = 0;  // definition
+	int MapLoader::Y = 0;  // definition
+
+
+	void MapLoader::LoadMap(int mapLevel)
 	{
-		for (int y = 0; y < COLUMNS; y++)
+		std::string mapPath = "C:\\Users\\Ebisu\\source\\repos\\Raycaster\\SFML3.0\\Map1.txt";
+		std::ifstream mapFile(mapPath);
+
+		if (!mapFile.is_open())
 		{
-			for (int x = 0; x < ROWS; x++)
+			std::cerr << "Failed to open map file: " << mapPath << "\n";
+			return;
+		}
+
+
+		while (std::getline(mapFile, this->mapAssets))
+		{
+			this->X = 0;
+			World::mapSize.push_back({});
+			for (char character : this->mapAssets)
 			{
-				if (mapSize[y][x] == 1)
+				if (character == '#')
 				{
-					//Cell is not empty
-					sf::RectangleShape cell;
-					cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
-					cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
-					cell.setFillColor(sf::Color::Transparent);
-					World::mapObjects.push_back(cell);
+					// Found wall so add it too the vector array
+					World::mapSize[this->Y].push_back({ 1 });
+					this->X++;
 				}
-				else if (mapSize[y][x] == 0) 
+				else
 				{
-					sf::RectangleShape cell;
-					cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
-					cell.setFillColor(sf::Color::Transparent);
-					cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
-					Outlines.push_back(cell);
+					World::mapSize[this->Y].push_back({ 0 });
+					this->X++;
+				}
+			}
+			this->Y++;
+		}
+	}
+
+	void WorldMap::setCellSize()
+	{
+		if (MapLoader::X > 0 && MapLoader::Y > 0)
+		{
+			WorldMap::cellSizeX = (double)resX / MapLoader::X;
+			WorldMap::cellSizeY = (double)resY / MapLoader::Y;
+		}
+		else
+		{
+			std::cout << "Invalid map dimensions!" << "\n";
+		}
+	}
+
+	int widthX = MapLoader::X;
+	int heightY = MapLoader::Y;
+
+	void WorldMap::draw(sf::RenderWindow& window)
+	{
+		int widthX = MapLoader::X;
+		int heightY = MapLoader::Y;
+
+
+		if (World::mapObjects.empty())
+		{
+			for (int y = 0; y < heightY; y++)
+			{
+				for (int x = 0; x < widthX; x++)
+				{
+					if (DEBUG == 0)
+					{
+						if (mapSize[y][x] == 1)
+						{
+							//Cell is not empty
+							sf::RectangleShape cell;
+							cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
+							cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
+							cell.setFillColor(sf::Color::Transparent);
+							World::mapObjects.push_back(cell);
+						}
+						else if (mapSize[y][x] == 0)
+						{
+							sf::RectangleShape cell;
+							cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
+							cell.setFillColor(sf::Color::Transparent);
+							cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
+							Outlines.push_back(cell);
+						}
+					}
+					else if (DEBUG == 1)
+					{
+						if (mapSize[y][x] == 1)
+						{
+							//Cell is not empty
+							sf::RectangleShape cell;
+							cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
+							cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
+							cell.setFillColor(sf::Color::White);
+							World::mapObjects.push_back(cell);
+						}
+						else if (mapSize[y][x] == 0)
+						{
+							sf::RectangleShape cell;
+							cell.setSize(sf::Vector2f(cellSizeX, cellSizeY));
+							cell.setFillColor(sf::Color::Transparent);
+							cell.setPosition(sf::Vector2f(x * cellSizeX, y * cellSizeY));
+							Outlines.push_back(cell);
+						}
+					}
 				}
 			}
 		}
-	}
-	else 
-	{
-		
-		for (const auto cell : Outlines)
+		else
 		{
-			window.draw(cell);
-		}
 
-		for (const auto cell : World::mapObjects)
-		{
-			window.draw(cell);
+			for (const auto cell : Outlines)
+			{
+				window.draw(cell);
+			}
+
+			for (const auto cell : World::mapObjects)
+			{
+				window.draw(cell);
+			}
 		}
 	}
 }

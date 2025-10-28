@@ -5,7 +5,11 @@
       <FullPath>C:\Users\Ebisu\source\repos\Raycaster\x64\Debug\Raycaster.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Map1.txt</FullPath>
+    </ContentFile>
+  </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

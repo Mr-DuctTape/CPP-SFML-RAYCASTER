@@ -1,8 +1,124 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (SFML3.0.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Main.cpp
-  Generating code
-  1 of 125 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  SFML3.0.vcxproj -> C:\Users\Ebisu\source\repos\Raycaster\x64\Release\Raycaster.exe
+  Player.cpp
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(36,36): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(36,36): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(36,36): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(36,36): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(36,36): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(37,36): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(37,36): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(37,36): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(37,36): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(37,36): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\Player.cpp(78,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  rayCaster.cpp
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,88): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,88): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,88): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,88): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,88): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,41): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,41): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,41): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,41): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(40,41): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(87,13): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(88,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(94,13): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(95,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(114,32): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(114,32): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(114,32): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(114,32): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(114,32): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,32): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,32): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,32): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,32): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(115,32): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\rayCaster.cpp(118,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  WorldMap.cpp
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,45): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,45): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,45): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,45): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,45): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,34): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,34): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,34): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,34): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(67,34): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,55): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,55): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,55): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,55): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,55): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,40): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,40): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,40): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(68,40): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,45): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,45): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,45): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,45): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,45): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,34): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,34): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,34): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,34): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(75,34): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,55): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,55): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,55): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,55): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,55): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,40): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,40): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,40): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(77,40): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,45): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,45): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,45): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,45): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,45): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,34): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,34): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,34): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,34): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(87,34): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,55): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,55): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,55): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,55): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,55): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,40): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,40): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,40): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(88,40): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,45): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,45): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,45): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,45): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,45): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,34): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,34): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,34): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,34): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(95,34): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,55): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,55): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,55): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,55): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,55): warning C4244:         ]
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,40): warning C4244:         with
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,40): warning C4244:         [
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,40): warning C4244:             T=float
+C:\Users\Ebisu\source\repos\Raycaster\SFML3.0\WorldMap.cpp(97,40): warning C4244:         ]
+rayCaster.obj : error LNK2001: unresolved external symbol "public: static int World::MapLoader::X" (?X@MapLoader@World@@2HA)
+rayCaster.obj : error LNK2001: unresolved external symbol "public: static int World::MapLoader::Y" (?Y@MapLoader@World@@2HA)
+C:\Users\Ebisu\source\repos\Raycaster\x64\Release\Raycaster.exe : fatal error LNK1120: 2 unresolved externals

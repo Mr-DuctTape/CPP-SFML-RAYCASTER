@@ -3,10 +3,10 @@
 
 enum RayQuality
 {
-	Amazing, // full resolution (ResX)
-	Good, // half resolution (ResX / 2)
-	Fast, // third resolution (ResX / 3)
-	VeryFast // Quarter resolution (ResX / 4)
+	Amazing = 1, // full resolution (ResX)
+	Good = 2, // half resolution (ResX / 2)
+	Fast = 4, // third resolution (ResX / 4)
+	VeryFast = 8 // Quarter resolution (ResX / 8)
 };
 
 class rayCaster
@@ -17,7 +17,7 @@ private:
 public:
 	std::vector<RectangleShape> walls;
 	
-	void castRays(Player &player, World::WorldMap& worldMap);
+	void castRays(Player &player, World::WorldMap& worldMap, int qualityIndex);
 	void DrawWalls(RenderWindow &window);
 };
 
