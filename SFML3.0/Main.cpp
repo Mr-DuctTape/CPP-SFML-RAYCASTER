@@ -56,7 +56,8 @@ int main()
                 window.close();
         }
 
-
+        std::cout << __cplusplus << std::endl;
+        
         //Updates
         player.move(player.shape, 2.0);
 
@@ -81,8 +82,11 @@ int main()
         else
         {
             window.draw(player.shape);
+
             window.draw(player.lineOfSight);
+
             worldMap.draw(window);
+
             enemy.drawEnemy(window, player);
         }
         window.display();

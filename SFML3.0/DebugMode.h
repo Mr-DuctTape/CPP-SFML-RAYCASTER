@@ -1,2 +1,2 @@
 #pragma once
-#define DEBUG 0 // 0 == disable Debug mode
+#define DEBUG 1 // 0 == disable Debug mode

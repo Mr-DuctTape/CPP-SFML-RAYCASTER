@@ -17,13 +17,11 @@ void Enemy::drawEnemy(RenderWindow& renderWindow, Player& player)
 	if (magToEnemy == 0 || magLookDir == 0) return;
 
 	float angleRad = atan2(toEnemy.y, toEnemy.x) - atan2(playerLookDirection.y, playerLookDirection.x);
+
 	if (angleRad > PI) angleRad -= 2 * PI;
 	if (angleRad < -PI) angleRad += 2 * PI;
 
-
 	float angle = (180.0 / PI) * angleRad;
-
-
 
 	if (angle > FOV) 
 	{
@@ -36,8 +34,6 @@ void Enemy::drawEnemy(RenderWindow& renderWindow, Player& player)
 
 	float maxSpriteHeight = resY * 2;
 	float spriteHeight = maxSpriteHeight / (distance / 2.0);
-
-	std::cout << spriteHeight << "\n";
 
 	CircleShape temp;
 	temp.setRadius(spriteHeight);
