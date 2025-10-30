@@ -11,13 +11,11 @@ enum RayQuality
 
 class rayCaster
 {
-private:
-	double FOV = 66.0;
 
 public:
 	std::vector<RectangleShape> walls;
 	
-	void castRays(Player &player, World::WorldMap& worldMap, int qualityIndex);
+	void castViewRays(Player &player, World::WorldMap& worldMap, int qualityIndex);
 	void DrawWalls(RenderWindow &window);
 };
 

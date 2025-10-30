@@ -33,7 +33,7 @@
     <ClCompile Include="rayCaster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MapLoader.cpp">
+    <ClCompile Include="Enemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -70,7 +70,7 @@
     <ClInclude Include="DebugMode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MapLoader.h">
+    <ClInclude Include="Enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

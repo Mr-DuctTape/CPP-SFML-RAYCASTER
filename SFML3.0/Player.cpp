@@ -43,14 +43,14 @@ void Player::move(CircleShape& playerShape, double deltaTime)
 {
 	//Rotation
 
-	if (rotationAngle > 360)
+	if (rotationAngle > 360.0)
 	{
-		rotationAngle = 0;
+		rotationAngle = 0.0;
 	}
 
-	if (rotationAngle < 0)
+	if (rotationAngle < 0.0)
 	{
-		rotationAngle = 360;
+		rotationAngle = 360.0;
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Right))

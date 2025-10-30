@@ -4,24 +4,29 @@
 #include "DebugMode.h"
 
 #define PI  3.14159
+#define FOV 66.0
 
 
 using namespace sf;
 
+static const double MovementSpeed{ 2.0 };
+
 class Player
 {
+	
 private:
 	bool CollisionDetection(Vector2f direction);
     struct Directions
 	{
-		Vector2f up{ 0,-1.f };
-		Vector2f down{ 0, 1.f };
-		Vector2f left{ -1.f, 0 };
-		Vector2f right{ 1.f,0 };
+		Vector2f up{ 0,-1.f * MovementSpeed};
+		Vector2f down{ 0, 1.f * MovementSpeed };
+		Vector2f left{ -1.f * MovementSpeed, 0 };
+		Vector2f right{ 1.f * MovementSpeed,0 };
 	};
 
+
 public:
-	double rotationAngle = 0.0;
+	double rotationAngle{ 0.0 };
 	Directions directions;
 	CircleShape shape;
 	RectangleShape lineOfSight;

@@ -13,7 +13,7 @@ namespace World
 
 	void MapLoader::LoadMap(int mapLevel)
 	{
-		std::string mapPath = "C:\\Users\\Ebisu\\source\\repos\\Raycaster\\SFML3.0\\Map1.txt";
+		std::string mapPath = "C:\\Users\\Ebisu\\source\\repos\\Raycaster\\SFML3.0\\Map1.txt"; //Figure out a way to make this work without direct path
 		std::ifstream mapFile(mapPath);
 
 		if (!mapFile.is_open())

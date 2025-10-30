@@ -17,7 +17,7 @@ int getRayCount(int qualityIndex, int resX)
 	return resX / qualityIndex;
 }
 
-void rayCaster::castRays(Player& player, World::WorldMap& worldMap, int qualityIndex)
+void rayCaster::castViewRays(Player& player, World::WorldMap& worldMap, int qualityIndex)
 {
 	wallObjects.clear();
 
@@ -33,7 +33,9 @@ void rayCaster::castRays(Player& player, World::WorldMap& worldMap, int qualityI
 	double FOVradians = FOV * (PI / 180.0);
 	double rayAngleStep = FOVradians / (double)raysToCast;
 
-	for (int ray = 0; ray < raysToCast; ray++)
+
+	//This loop renders everything
+	for (int ray = 0; ray < raysToCast; ++ray)
 	{
 		double rayAngle = -FOVradians / 2 + ray * rayAngleStep;
 
@@ -75,7 +77,7 @@ void rayCaster::castRays(Player& player, World::WorldMap& worldMap, int qualityI
 		}
 
 		bool bTileFound = false;
-		float maxDistance = 100.0f;
+		float maxDistance = 30.0f;
 		float currentDistance = 0.0f;
 		bool hitVertical = false;
 
@@ -107,17 +109,12 @@ void rayCaster::castRays(Player& player, World::WorldMap& worldMap, int qualityI
 			}
 		}
 
-		Vector2f intersection{};
-
 		if (bTileFound)
 		{
-			intersection.x = (rayStartX + rayDir.x * currentDistance);
-			intersection.y = (rayStartY + rayDir.y * currentDistance);
-
-			float maxHeight = resY;
+			float maxHeight = resY + (resY / 2); //For some odd reason this makes it look way better and not squished/stretched
 			float wallHeight = maxHeight / (currentDistance * cos(rayAngle));
 
-			RectangleShape wall(Vector2f((float)qualityIndex, wallHeight));
+			RectangleShape wall(Vector2f(qualityIndex, wallHeight));
 			wall.setPosition(Vector2f(ray * (float)qualityIndex, resY / 2 - wallHeight / 2));
 
 			if (hitVertical)

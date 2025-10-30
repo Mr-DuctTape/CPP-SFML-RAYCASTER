@@ -5,11 +5,13 @@
 #include "DebugMode.h"
 #include <fstream>
 
-const int resX = 640;
-const int resY = 320;
+
+const int resX = 1280;
+const int resY = 720;
 
 namespace World
 {
+
     class MapLoader
     {
     private:
